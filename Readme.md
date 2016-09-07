@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Глеб Гофман](https://up.htmlacademy.ru/adaptive/8/user/184556).
-* Наставник: `Неизвестно`.
+* Наставник: Евгений Болтян.
 
 ---
 
