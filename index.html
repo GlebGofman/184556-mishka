@@ -167,9 +167,9 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <section class="social">
-          <a class="social-btn social-btn--inst" href="#">Инстаграм</a>
-          <a class="social-btn social-btn--fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn--tw" href="#">Твиттер</a>
+          <a class="social-btn  social-btn--inst" href="#">Инстаграм</a>
+          <a class="social-btn  social-btn--fb" href="#">Фейсбук</a>
+          <a class="social-btn  social-btn--tw" href="#">Твиттер</a>
         </section>
         <hr>
         <section class="main-footer__copyright">
@@ -178,5 +178,17 @@
         </section>
       </div>
     </footer>
+    <div class="modal  modal--closed">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="modal__choose-size" action="#" method="get">
+          <input class="modal__size-btn  modal__size-btn--s" type="radio" name="size" value="s" checked>
+          <input class="modal__size-btn  modal__size-btn--m" type="radio" name="size" value="m">
+          <input class="modal__size-btn  modal__size-btn--l" type="radio" name="size" value="l">
+          <button class="modal__add-btn" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
