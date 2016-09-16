@@ -4,30 +4,33 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка - Оформление заказа</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
-    <h1 class="main-header__title  visually-hidden">Мишка</h1>
-    <div class="main-header__logo">
-      <img src="http://placehold.it/150x100" width="" height="" alt="Mishka">
-    </div>
-    <nav class="main-nav  main-nav--closed  main-nav--nojs">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="wrapper">
+    <div class="wrapper">
+      <h1 class="main-header__title  visually-hidden">Мишка</h1>
+      <div class="main-header__visible">
+        <div class="main-header__logo">
+          <img src="http://placehold.it/150x100" width="" height="" alt="Mishka">
+        </div>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      </div>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <ul class="main-nav__list">
           <li class="main-nav__item  main-nav__item--active"><a href="#">Каталог товаров</a></li>
           <li class="main-nav__item"><a>Вязание на заказ</a></li>
           <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
           <li class="main-nav__item"><a href="#">Корзина:<span class="main-nav__basket-counter  main-nav__basket-counter--empty">пока пусто</span></a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="order">
-      <header class="order__header">
+      <header class="order-header">
         <div class="wrapper">
-          <h1 class="order__title">Вязание на заказ</h1>
+          <h1 class="order-header__title">Вязание на заказ</h1>
         </div>
       </header>
       <div class="wrapper">
@@ -41,32 +44,32 @@
           <fieldset class="order__form-item">
             <legend class="order__item-title">Тип</legend>
             <input type="radio" name="type" value="interior" id="interior" checked>
-            <label for="interior">Аксессуар для интерьера</label>
+            <label class="order__lable" for="interior">Аксессуар для интерьера</label>
             <input type="radio" name="type" value="toys" id="toys">
-            <label for="toys">Детская игрушка</label>
+            <label class="order__lable" for="toys">Детская игрушка</label>
           </fieldset>
           <fieldset class="order__form-item">
             <legend class="order__item-title">Цвет</legend>
             <input type="checkbox" name="white" id="white" checked>
-            <label for="white">Белый</label>
+            <label class="order__lable" for="white">Белый</label>
             <input type="checkbox" name="grey" id="grey" checked>
-            <label for="grey">Серый</label>
+            <label class="order__lable" for="grey">Серый</label>
             <input type="checkbox" name="grey" id="tiffany">
-            <label for="tiffany">«Тиффани»</label>
+            <label class="order__lable" for="tiffany">«Тиффани»</label>
             <input type="checkbox" name="black" id="black">
-            <label for="black">Черный</label>
+            <label class="order__lable" for="black">Черный</label>
             <input type="checkbox" name="pink" id="pink">
-            <label for="pink">Розовый</label>
+            <label class="order__lable" for="pink">Розовый</label>
             <input type="checkbox" name="orange" id="orange">
-            <label for="orange">Оранжевый</label>
+            <label class="order__lable" for="orange">Оранжевый</label>
           </fieldset>
           <fieldset class="order__form-item">
             <legend class="order__item-title">ФИО</legend>
-            <label for="user-name">Имя:</label>
+            <label class="order__lable" for="user-name">Имя:</label>
             <input type="text" name="user-name" id="user-name" placeholder="Введите ваше имя" required>
-            <label for="user-surname">Фамилия:</label>
+            <label class="order__lable" for="user-surname">Фамилия:</label>
             <input type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию" required>
-            <label for="user-patronymic">Отчество:</label>
+            <label class="order__lable" for="user-patronymic">Отчество:</label>
             <input type="text" name="user-patronymic" id="user-patronymic" placeholder="Отчество, если желаете">
           </fieldset>
           <fieldset class="order__form-item">
@@ -97,7 +100,7 @@
       <hr>
       <section class="main-footer__copyright">
         <span class="main-footer__designed">Разработано</span>
-        <span class="main-footer__logo"><img src="http://placehold.it/150x100"></span>
+        <span class="main-footer__logo"></span>
       </section>
     </div>
   </footer>

@@ -4,46 +4,55 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
-    <h1 class="main-header__title  visually-hidden">Мишка</h1>
-    <div class="main-header__logo">
-      <img src="http://placehold.it/150x100" width="" height="" alt="Mishka">
-    </div>
-    <nav class="main-nav  main-nav--closed  main-nav--nojs">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="wrapper">
+    <div class="wrapper">
+      <h1 class="main-header__title  visually-hidden">Мишка</h1>
+      <div class="main-header__visible">
+        <div class="main-header__logo">
+          <img src="http://placehold.it/150x100" width="" height="" alt="Mishka">
+        </div>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      </div>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <ul class="main-nav__list">
           <li class="main-nav__item  main-nav__item--active"><a href="#">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
           <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
           <li class="main-nav__item"><a href="#">Корзина:<span class="main-nav__basket-counter  main-nav__basket-counter--empty">пока пусто</span></a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="description">
       <div class="wrapper">
         <h2 class="visually-hidden">Слоган</h2>
-        <p class="description__text">Милые штуки ручной работы для дома</p>
+        <p class="description__text">Милые штуки ручной<br> работы для дома</p>
       </div>
     </section>
     <section class="product-categories">
       <h2 class="visually-hidden">Категории товаров</h2>
-      <a class="category-link  category-link--interior" href="#">
-        <div class="wrapper">
-          <div class="category-link__text">Предметы интерьера</div>
-          <img class="category-link__illustration" src="http://placehold.it/150x100" width="" height="" alt="">
-        </div>
-      </a>
-      <a class="category-link  category-link--toys" href="#">
-        <div class="wrapper">
-          <div class="category-link__text">Детские игрушки</div>
-          <img class="category-link__illustration" src="http://placehold.it/150x100" width="" height="" alt="">
-        </div>
-      </a>
+      <div class="category-link  category-link--interior">
+        <a class="category-link__link" href="#">
+          <div class="wrapper">
+            <div class="category-link__text">
+              Предметы интерьера
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="category-link  category-link--toys">
+        <a class="category-link__link" href="#">
+          <div class="wrapper">
+            <div class="category-link__text">
+              Детские игрушки
+            </div>
+          </div>
+        </a>
+      </div>
     </section>
     <section class="product-of-the-week">
       <h2 class="visually-hidden">Товар недели</h2>
@@ -70,12 +79,14 @@
           </tr>
         </table>
         <div class="product-of-the-week__photo">
-          <img src="http://placehold.it/150x100" width="" height="" alt="Фото товара недели">
+          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото товара недели">
         </div>
         <div class="product-of-the-week__price">
           Цена: 990 руб
         </div>
-        <a class="order-btn" href="#">Заказать</a>
+        <div class="order-btn">
+          <a class="order-btn__link" href="#">Заказать</a>
+        </div>
       </div>
     </section>
     <div class="separator"></div>
@@ -129,7 +140,9 @@
             <button class="controls-btn  controls-btn--prev" type="button">Назад</button>
             <button class="controls-btn  controls-btn--next" type="button">Вперёд</button>
           </div>
-          <a class="write-review-btn" href="#">Написать</a>
+          <div class="write-review-btn">
+            <a class="write-review-btn__link" href="#">Написать</a>
+          </div>
         </section>
       </div>
     </article>
@@ -158,7 +171,9 @@
         </iframe>
       </div>
       <div class="wrapper">
-        <a class="write-us-btn" href="#">Напишите нам</a>
+        <div class="write-us-btn">
+          <a class="write-us-btn__link" href="#">Напишите нам</a>
+        </div>
       </div>
     </section>
   </main>
@@ -169,9 +184,10 @@
         <a class="social-btn  social-btn--fb" href="#">Фейсбук</a>
         <a class="social-btn  social-btn--tw" href="#">Твиттер</a>
       </section>
+      <hr>
       <section class="main-footer__copyright">
         <span class="main-footer__designed">Разработано</span>
-        <span class="main-footer__logo"><img src="http://placehold.it/150x100"></span>
+        <span class="main-footer__logo"></span>
       </section>
     </div>
   </footer>
@@ -183,7 +199,7 @@
         <input class="modal__size-btn  modal__size-btn--s" type="radio" name="size" value="s" checked>
         <input class="modal__size-btn  modal__size-btn--m" type="radio" name="size" value="m">
         <input class="modal__size-btn  modal__size-btn--l" type="radio" name="size" value="l">
-        <button class="modal-basket-btn" type="submit">Добавить</button>
+        <input class="modal-basket-btn" type="button" value="Добавить">
       </form>
     </div>
   </div>
