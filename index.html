@@ -3,34 +3,75 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
-    <div class="wrapper">
-      <h1 class="main-header__title  visually-hidden">Мишка</h1>
-      <div class="main-header__visible">
-        <div class="main-header__logo">
-          <img src="http://placehold.it/150x100" width="" height="" alt="Mishka">
-        </div>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-      </div>
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--active"><a href="#">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="#">Корзина:<span class="main-nav__basket-counter  main-nav__basket-counter--empty">пока пусто</span></a></li>
-        </ul>
-      </nav>
+    <h1 class="main-header__title  visually-hidden">Мишка</h1>
+    <div class="main-header__nav-section">
+      <ul class="main-header__nav-list">
+        <li class="main-header__nav-item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-header__nav-item">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
     </div>
+    <div class="main-header__logo">
+      <img src="http://placehold.it/150x50" width="" height="" alt="Mishka">
+      <button class="main-header__toggle" type="button">Открыть меню</button>
+    </div>
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <ul class="main-nav__list">
+        <li class="main-nav__item  main-nav__item--active">
+          <a class="main-nav__item-link" href="catalog.html">
+            <div class="main-nav__item-text">
+              Каталог товаров
+            </div>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="form.html">
+            <div class="main-nav__item-text">
+              Вязание на заказ
+            </div>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="#">
+            <div class="main-nav__item-text">
+              Поиск по сайту
+            </div>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">
+            <div class="main-nav__item-text">
+              Корзина:
+              <span class="main-nav__basket-counter  main-nav__basket-counter--empty">пока пуста</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section class="description">
       <div class="wrapper">
         <h2 class="visually-hidden">Слоган</h2>
-        <p class="description__text">Милые штуки ручной<br> работы для дома</p>
+        <ul class="description__list">
+          <li class="description__item">
+
+          </li>
+          <li class="description__item">
+
+          </li>
+        </ul>
+        <p class="description__delivery-info"></p>
+        <p class="description__text"></p>
       </div>
     </section>
     <section class="product-categories">
@@ -167,8 +208,6 @@
         </table>
       </div>
       <div class="contacts__map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5906828381876!2d30.32081414987703!3d59.93893391443112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1473567299290" width="320" height="457" frameborder="0" style="border:0" allowfullscreen>
-        </iframe>
       </div>
       <div class="wrapper">
         <div class="write-us-btn">

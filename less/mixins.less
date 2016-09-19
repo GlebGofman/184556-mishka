@@ -2,3 +2,44 @@
   outline: 1px solid @color;
 }
 
+.outline(small-block; @color) {
+  outline: 1px solid @color;
+}
+
+.outline(item; @color) {
+  outline: 1px solid @color;
+}
+
+.outline(wrapper; @color) {
+  outline: 1px dashed @color;
+}
+
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.container() {
+  width: 260px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 668px;
+  }
+
+  @media @desktop-widths {
+    width: 1050px;
+  }
+}
+
+.no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}

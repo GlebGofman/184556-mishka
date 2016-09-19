@@ -39,13 +39,17 @@
 
 @import "variables.less";
 @import "mixins.less";
+@import "global/fonts.less";
+
 
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
+.wrapper * {
+  visibility: hidden;
 }
+
+
+@import "global/outline.less";
