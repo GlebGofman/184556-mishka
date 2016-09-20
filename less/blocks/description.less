@@ -1,18 +1,100 @@
 .description {
   width: 320px;
-  min-height: 283px;
+  min-height: 488px;
   margin: 0 auto;
-  padding-top: 74px;
-  .outline(big-block; darkred);
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 27px;
   font-weight: bold;
+  .outline(big-block; darkred);
+}
+
+.description__nav {
+  display: none;
+}
+
+.description__tagline {
+  min-height: 213px;
+  line-height: 30px;
+  padding-top: 70px;
+  .outline(big-block; darkred);
+}
+
+.description__text {
+  min-height: 90px;
+  .outline(small-block; green);
+}
+
+.description__delivery-info {
+  display: none;
 }
 
 @media @tablet-widths {
 
   .description {
+    padding-top: 0;
     width: 768px;
+    min-height: 750px;
+  }
+
+  .description__nav {
+    display: block;
+    min-height: 40px;
+    .clearfix();
+  }
+
+  .description__list {
+    float: left;
+    list-style: none;
+    width: 334px;
+    min-height: 23px;
+    padding-top: 17px;
+    .clearfix();
+    .outline(small-block; green);
+  }
+
+  .description__item {
+    width: 167px;
+    min-height: 24px;
+    .clearfix();
+    .outline(item; red);
+  }
+
+  .description__item:nth-child(1),
+  .description__item:nth-child(2) {
+    float: left;
+  }
+
+  .description__item:nth-child(3),
+  .description__item:nth-child(4) {
+    display: none;
+  }
+
+  .description__tagline {
+    padding-top: 116px;
+    min-height: 470px;
+  }
+
+  .description__text {
+    width: 550px;
+    min-height: 100px;
+    margin: 0 auto;
+  }
+
+  .description__delivery-info {
+    display: block;
+    float: right;
+    width: 334px;
+    min-height: 23px;
+    padding-top: 17px;
+    .clearfix();
+    .outline(small-block; green);
+  }
+
+  .description__delivery-text {
+    float: right;
+    width: 250px;
+    min-height: 24px;
+    .outline(item; red);
   }
 }
 
@@ -20,5 +102,35 @@
 
   .description {
     width: 1150px;
+  }
+
+  .description__list {
+    width: 700px;
+  }
+
+  .description__delivery-info {
+    width: 350px;
+  }
+
+  .description__item {
+    width: 175px;
+    margin-right: 45px;
+  }
+
+  .description__item:nth-child(1),
+  .description__item:nth-child(2) {
+    display: none;
+  }
+
+  .description__item:nth-child(3),
+  .description__item:nth-child(4) {
+    display: block;
+    float: left;
+  }
+
+  .description__text {
+    width: 700px;
+    min-height: 114px;
+    margin: 0 auto;
   }
 }
