@@ -1,7 +1,29 @@
 .product-of-the-week-mark {
+  min-height: 21px;
+  margin-bottom: 24px;
   background-color: @bg-color;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
   color: @bg-color-interior;
+  .outline(small-block; green);
+}
+
+
+@media @tablet-widths {
+  .product-of-the-week-mark {
+    float: right;
+    width: 167px;
+    min-height: 47px;
+    margin-bottom: 0;
+    color: red;
+  }
+}
+
+@media @desktop-widths {
+  .product-of-the-week-mark {
+    float: left;
+    width: 175px;
+    min-height: 57px;
+  }
 }

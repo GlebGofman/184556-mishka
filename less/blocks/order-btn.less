@@ -1,11 +1,20 @@
 .order-btn {
+  min-height: 52px;
   background-color: @bg-color;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
+  .outline(small-block; green);
 }
 
 .order-btn__link {
   color: #444;
   text-decoration: none;
+}
+
+@media @tablet-widths {
+  .order-btn {
+    width: 290px;
+    min-height: 52px;
+  }
 }
