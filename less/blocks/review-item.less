@@ -1,3 +1,37 @@
 .review-item {
   background-color: @bg-color;
+  min-height: 433px;
+  margin-bottom: 39px;
+  .outline(small-block; darkred);
+}
+
+.review-item__text {
+  font-size: 15px;
+  color: #444;
+}
+
+.review-item__personal {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.review-item__email {
+  font-size: 18px;
+  font-weight: normal;
+  color: #444;
+}
+
+@media @tablet-widths {
+  .review-item {
+    min-height: 237px;
+    margin-bottom: 0;
+  }
+}
+
+@media @desktop-widths {
+  .review-item {
+    min-height: 186px;
+    margin-left: 175px;
+  }
 }

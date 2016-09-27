@@ -1,19 +1,38 @@
-body {
+.index-body {
   background: @bg-color url("../../img/mishka-index-mobile.png") no-repeat 50% 0px;
   background-size: 320px auto;
   min-height: 3932px;
 }
 
+.catalog-body {
+  background: @bg-color url("../../img/mishka-catalog-mobile.png") no-repeat 50% 0px;
+
+
+}
+
 @media @tablet-widths {
-  body {
+  .index-body {
     background: @bg-color url("../../img/mishka-index-tablet.png") no-repeat 50% 0px;
     background-size: 768px auto;
+  }
+
+  .catalog-body {
+    background: @bg-color url("../../img/mishka-catalog-tablet.png") no-repeat 50% 0px;
+    background-size: 320px auto;
+    min-height: 3932px;
   }
 }
 
 @media @desktop-widths {
-  body {
+  .index-body {
     background: @bg-color url("../../img/mishka-index-desktop.png") no-repeat 50% 0px;
     background-size: 1150px auto;
   }
+
+  .catalog-body {
+    background: @bg-color url("../../img/mishka-catalog-desktop.png") no-repeat 50% 0px;
+    background-size: 320px auto;
+    min-height: 3932px;
+  }
 }
+

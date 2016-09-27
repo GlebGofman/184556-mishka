@@ -1,26 +1,44 @@
 .reviews {
   background-color: @bg-color;
   font-family: "Open Sans", "Arial", sans-serif;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 52px;
+  .outline(big-block; red);
 }
 
 .reviews__title {
   font-size: 25px;
   font-weight: bold;
+  min-height: 30px;
+  margin-bottom: 23px;
+  .outline(small-block; darkred);
 }
 
-.review-item__text {
-  font-size: 15px;
-  color: #444;
+@media @tablet-widths {
+  .reviews {
+    width: 768px;
+    padding-top: 80px;
+    padding-bottom: 128px;
+  }
+
+  .reviews__title {
+    min-height: 50px;
+    margin-bottom: 46px;
+  }
 }
 
-.review-item__personal {
-  font-size: 18px;
-  font-weight: bold;
-  color: #000;
+@media @desktop-widths {
+  .reviews {
+    width: 1150px;
+    padding-top: 76px;
+    padding-bottom: 184px;
+  }
+
+  .reviews__title {
+    min-height: 57px;
+    margin-left: 175px;
+  }
 }
 
-.review-item__email {
-  font-size: 18px;
-  font-weight: normal;
-  color: #444;
-}
