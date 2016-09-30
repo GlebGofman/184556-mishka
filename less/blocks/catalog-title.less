@@ -1,6 +1,42 @@
 .catalog-title {
+  width: @mobile-w;
+  .margin-auto();
+  margin-bottom: 30px;
+  padding-top: 74px;
+  padding-bottom: 73px;
   background-color: @bg-color-footer;
-  .outline(big-block; darkred);
-  padding-top: 75px;
-  padding-bottom: 80px;
+  .outline(big-block; red);
+}
+
+.catalog-title__text {
+  min-height: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  .outline(small-block; darkred);
+}
+
+@media @tablet-widths {
+  .catalog-title {
+    width: @tablet-w;
+    padding-top: 17px;
+    .margin-auto();
+  }
+
+  .catalog-title__text {
+    margin-top: 60px;
+    min-height: 50px;
+  }
+}
+
+@media @desktop-widths {
+  .catalog-title {
+    width: @desktop-w;
+    .margin-auto();
+    padding-bottom: 95px;
+  }
+
+  .catalog-title__text {
+    margin-top: 60px;
+    min-height: 57px;
+  }
 }

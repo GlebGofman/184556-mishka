@@ -1,9 +1,12 @@
 .catalog-item {
+  flex-basis: 374px;
   background-color: @bg-color;
-  .outline(big-block; darkred);
-  margin-top: 30px;
-  padding-bottom: 25px;
   font-family: "Open Sans", "Arial", sans-serif;
+  .outline(small-block; darkred);
+
+  &--bigger {
+    flex-basis: 399px;
+  }
 }
 
 .catalog-item__name-link {
@@ -20,4 +23,16 @@
   font-size: 15px;
   font-weight: bold;
   color: #000;
+}
+
+@media @tablet-widths {
+  .catalog-item {
+      flex-basis: 334px;
+  }
+}
+
+@media @desktop-widths {
+  .catalog-item {
+    flex-basis: 315px;
+  }
 }

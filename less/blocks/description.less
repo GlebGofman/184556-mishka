@@ -8,10 +8,6 @@
   .outline(big-block; red);
 }
 
-.description__nav {
-  display: none;
-}
-
 .description__tagline {
   min-height: 90px;
   line-height: 30px;
@@ -19,32 +15,20 @@
   .outline(small-block; darkred);
 }
 
-.description__list {
-  list-style: none;
-}
-
 @media @tablet-widths {
-
   .description {
     width: @tablet-w;
     padding-top: 17px;
   }
 
-  .description__nav {
-    display: block;
-    min-height: 24px;
-    margin-bottom: 116px;
-    .outline(small-block; darkred);
-  }
-
   .description__tagline {
     min-height: 100px;
+    margin-top: 116px;
     margin-bottom: 370px;
   }
 }
 
 @media @desktop-widths {
-
   .description {
     width: @desktop-w;
   }
