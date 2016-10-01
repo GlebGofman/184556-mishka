@@ -1,8 +1,10 @@
 .write-us-btn {
+  min-height: 52px;
   background-color: @bg-color;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
+  .outline(small-block; darkred);
 }
 
 .write-us-btn__link {
@@ -10,3 +12,16 @@
   text-decoration: none;
 }
 
+@media @tablet-widths {
+  .write-us-btn {
+    width: 230px;
+    margin: 0 auto;
+  }
+}
+
+@media @desktop-widths {
+  .write-us-btn {
+    margin-left: 175px;
+    margin-bottom: 0;
+  }
+}

@@ -1,9 +1,22 @@
 .modal {
+  width: @mobile-w;
+  .margin-auto();
   background-color: @bg-color;
-  .outline(big-block; darkred);
   padding-top: 35px;
   padding-bottom: 46px;
   font-family: "Open Sans", "Arial", sans-serif;
+  .outline(big-block; red);
+}
+
+.modal__header {
+  min-height: 100px;
+  margin-bottom: 20px;
+  .outline(small-block; darkred);
+}
+
+.modal__choose-size {
+  min-height: 135px;
+  .outline(small-block; darkred);
 }
 
 .modal__title {
@@ -16,4 +29,14 @@
   font-size: 15px;
   font-weight: normal;
   color: #444;
+}
+
+@media @tablet-widths {
+  .modal {
+    width: 568px;
+  }
+
+  .modal .wrapper {
+    width: 350px;
+  }
 }

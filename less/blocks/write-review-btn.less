@@ -3,9 +3,24 @@
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
+  min-height: 52px;
+  .outline(small-block; darkred);
 }
 
 .write-review-btn__link {
   color: #444;
   text-decoration: none;
 }
+
+@media @tablet-widths {
+  .write-review-btn  {
+    display: none;
+  }
+}
+
+@media @desktop-widths {
+  .write-review-btn {
+    display: none;
+  }
+}
+

@@ -2,3 +2,53 @@
   outline: 1px solid @color;
 }
 
+.outline(small-block; @color) {
+  outline: 1px solid @color;
+  background-color: rgba(157, 157, 245, 0.4);
+}
+
+.outline(item; @color) {
+  outline: 1px solid @color;
+}
+
+.outline(wrapper; @color) {
+  outline: 1px dashed @color;
+}
+
+.outline(@color) {
+  outline: 2px solid @color;
+}
+
+.margin-auto() {
+  margin: 0 auto;
+}
+
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.container() {
+  width: 260px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 668px;
+  }
+
+  @media @desktop-widths {
+    width: 1050px;
+  }
+}
+
+.no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}

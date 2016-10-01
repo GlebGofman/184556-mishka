@@ -1,8 +1,16 @@
 .order-submit {
+  min-height: 52px;
   background-color: @bg-color;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
   color: #444;
+  .outline(small-block; darkred);
 }
 
+@media @desktop-widths {
+  .order-submit {
+    width: 700px;
+    .margin-auto();
+  }
+}

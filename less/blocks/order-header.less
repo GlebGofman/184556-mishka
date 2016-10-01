@@ -1,7 +1,45 @@
 .order-header {
+  width: @mobile-w;
+  .margin-auto();
   background-color: @bg-color-footer;
-  .outline(big-block; darkred);
-  padding-top: 75px;
-  padding-bottom: 80px;
-  margin-bottom: 25px;
+  padding-top: 73px;
+  padding-bottom: 73px;
+  .outline(big-block; red);
+}
+
+.order-header__title {
+  min-height: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 27px;
+  font-weight: bold;
+  color: #000;
+  .outline(small-block; darkred);
+}
+
+@media @tablet-widths {
+  .order-header {
+    width: @tablet-w;
+    padding-top: 17px;
+    padding-bottom: 75px;
+    .outline(big-block; red);
+  }
+
+  .order-header__title {
+    min-height: 50px;
+    margin-top: 57px;
+  }
+}
+
+
+@media @desktop-widths {
+  .order-header {
+    width: @desktop-w;
+    padding-bottom: 95px;
+    .outline(big-block; red);
+  }
+
+  .order-header__title {
+    min-height: 57px;
+  }
 }

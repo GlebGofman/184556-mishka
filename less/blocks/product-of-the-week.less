@@ -1,9 +1,23 @@
 .product-of-the-week {
+  width: @mobile-w;
+  margin: 0 auto;
   background-color: @bg-color;
-  padding-top: 32px;
-  padding-bottom: 38px;
-  .outline(big-block; darkred);
+  padding-top: 31px;
+  padding-bottom: 42px;
   font-family: "Open Sans", "Arial", sans-serif;
+  .clearfix();
+  .outline(big-block; red);
+}
+
+.product-of-the-week__title {
+  min-height: 50px;
+  margin-bottom: 24px;
+  .outline(small-block; darkred);
+}
+
+.product-of-the-week__body {
+  min-height: 678px;
+  .outline(small-block; darkred);
 }
 
 .product-of-the-week__name {
@@ -26,4 +40,42 @@
   font-size: 17px;
   font-weight: bold;
   color: #444;
+}
+
+@media @tablet-widths {
+  .product-of-the-week {
+    width: @tablet-w;
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .product-of-the-week__title {
+    min-height: 47px;
+    margin-bottom: 50px;
+  }
+
+  .product-of-the-week__body {
+    min-height: 410px;
+  }
+}
+
+@media @desktop-widths {
+  .product-of-the-week {
+    position: relative;
+    width: @desktop-w;
+    padding-top: 130px;
+    padding-bottom: 96px;
+  }
+
+  .product-of-the-week__title {
+    width: 1050px;
+    min-height: 57px;
+    margin-bottom: 45px;
+  }
+
+  .product-of-the-week__body {
+    width: 292px;
+    min-height: 476px;
+    margin-left: 175px;
+  }
 }

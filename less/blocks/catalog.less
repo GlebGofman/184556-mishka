@@ -1,7 +1,12 @@
 .catalog {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: space-between;
+  min-height: 1207px;
   background-color: @bg-color;
-  .outline(big-block; darkred);
   font-family: "Open Sans", "Arial", sans-serif;
+  .outline(big-block; red);
 }
 
 .catalog-title__text {
@@ -10,4 +15,17 @@
   color: #000;
 }
 
+@media @tablet-widths {
+  .catalog {
+    min-height: 1110px;
+    margin-top: 80px;
+  }
+}
 
+@media @desktop-widths {
+  .catalog {
+    flex-direction: row;
+    min-height: 659px;
+    margin-top: 130px;
+  }
+}

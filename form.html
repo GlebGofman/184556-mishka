@@ -3,104 +3,228 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка - Оформление заказа</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
-<body>
+<body class="form-body">
   <header class="main-header">
-    <div class="wrapper">
-      <h1 class="main-header__title  visually-hidden">Мишка</h1>
-      <div class="main-header__visible">
-        <div class="main-header__logo">
-          <img src="http://placehold.it/150x100" width="" height="" alt="Mishka">
-        </div>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-      </div>
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--active"><a href="#">Каталог товаров</a></li>
-          <li class="main-nav__item"><a>Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="#">Корзина:<span class="main-nav__basket-counter  main-nav__basket-counter--empty">пока пусто</span></a></li>
-        </ul>
-      </nav>
+    <h1 class="main-header__title  visually-hidden">Мишка</h1>
+    <div class="main-header__nav-left">
+      <ul class="main-header__nav-list">
+        <li class="main-header__nav-item">
+          <a href="catalog.html">
+
+          </a>
+        </li>
+        <li class="main-header__nav-item">
+          <a href="form.html">
+
+          </a>
+        </li>
+      </ul>
     </div>
+    <div class="main-header__logo">
+
+    </div>
+    <div class="main-header__nav-right">
+    <!-- сюда кнопку поиска и корзину -->
+    </div>
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <ul class="main-nav__list">
+        <li class="main-nav__item  main-nav__item--active">
+          <a class="main-nav__item-link" href="catalog.html">
+            <div class="main-nav__item-text">
+
+            </div>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="form.html">
+            <div class="main-nav__item-text">
+
+            </div>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="#">
+            <div class="main-nav__item-text">
+
+            </div>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">
+            <div class="main-nav__item-text">
+
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main>
+    <header class="order-header">
+      <div class="wrapper">
+        <section class="additional-nav">
+          <ul class="additional-nav__list">
+            <li class="additional-nav__item">
+              <a href="catalog.html">
+
+              </a>
+            </li>
+            <li class="additional-nav__item">
+              <a href="form.html">
+
+              </a>
+            </li>
+            <li class="additional-nav__item">
+              <a href="#">
+
+              </a>
+            </li>
+            <li class="additional-nav__item">
+              <a href="#">
+
+              </a>
+            </li>
+          </ul>
+          <div class="additional-nav__delivery-info">
+            <p class="additional-nav__delivery-text">
+
+            </p>
+          </div>
+        </section>
+        <h1 class="order-header__title">
+
+        </h1>
+      </div>
+    </header>
     <section class="order">
-      <header class="order-header">
-        <div class="wrapper">
-          <h1 class="order-header__title">Вязание на заказ</h1>
-        </div>
-      </header>
       <div class="wrapper">
         <p class="order__text">
-          Мы будем рады воплотить в жизнь
-          ваши пожелания! Заполните простую
-          форму заказа и мы свяжемся с вами,
-          чтобы уточнить детали.
+
         </p>
-        <form class="order__form">
-          <fieldset class="order__form-item">
-            <legend class="order__item-title">Тип</legend>
-            <input type="radio" name="type" value="interior" id="interior" checked>
-            <label class="order__lable" for="interior">Аксессуар для интерьера</label>
-            <input type="radio" name="type" value="toys" id="toys">
-            <label class="order__lable" for="toys">Детская игрушка</label>
-          </fieldset>
-          <fieldset class="order__form-item">
-            <legend class="order__item-title">Цвет</legend>
-            <input type="checkbox" name="white" id="white" checked>
-            <label class="order__lable" for="white">Белый</label>
-            <input type="checkbox" name="grey" id="grey" checked>
-            <label class="order__lable" for="grey">Серый</label>
-            <input type="checkbox" name="grey" id="tiffany">
-            <label class="order__lable" for="tiffany">«Тиффани»</label>
-            <input type="checkbox" name="black" id="black">
-            <label class="order__lable" for="black">Черный</label>
-            <input type="checkbox" name="pink" id="pink">
-            <label class="order__lable" for="pink">Розовый</label>
-            <input type="checkbox" name="orange" id="orange">
-            <label class="order__lable" for="orange">Оранжевый</label>
-          </fieldset>
-          <fieldset class="order__form-item">
-            <legend class="order__item-title">ФИО</legend>
-            <label class="order__lable" for="user-name">Имя:</label>
-            <input type="text" name="user-name" id="user-name" placeholder="Введите ваше имя" required>
-            <label class="order__lable" for="user-surname">Фамилия:</label>
-            <input type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию" required>
-            <label class="order__lable" for="user-patronymic">Отчество:</label>
-            <input type="text" name="user-patronymic" id="user-patronymic" placeholder="Отчество, если желаете">
-          </fieldset>
-          <fieldset class="order__form-item">
-            <legend class="order__item-title">Тел</legend>
-            <input type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХ ХХ" required>
-          </fieldset>
-          <fieldset class="order__form-item">
-            <legend class="order__item-title">E-mail</legend>
-            <input type="email" name="email" required>
-          </fieldset>
-          <fieldset class="order__form-item">
-            <label class="order__item-title">Доп</label>
-            <input type="textarea" name="extra" placeholder="Опишите все ваши пожелания к заказу">
-          </fieldset>
-          <p class="order__info">Все поля обязательны для заполнения</p>
-          <input class="order-submit" type="submit" value="Отправить заказ">
-        </form>
       </div>
+      <form class="order__form">
+        <div class="order__form-item  order__form-item--type">
+          <div class="order__item-title">
+
+          </div>
+          <div class="order__inputs  order__inputs--type">
+
+            <label class="order__lable" for="interior">
+
+            </label>
+
+            <label class="order__lable" for="toys">
+
+            </label>
+          </div>
+        </div>
+        <div class="order__form-item  order__form-item--color">
+          <div class="order__item-title">
+
+          </div>
+          <div class="order__inputs  order__inputs--color">
+
+            <label class="order__lable" for="white">
+
+            </label>
+
+            <label class="order__lable" for="grey">
+
+            </label>
+
+            <label class="order__lable" for="tiffany">
+
+            </label>
+
+            <label class="order__lable" for="black">
+
+            </label>
+
+            <label class="order__lable" for="pink">
+
+            </label>
+
+            <label class="order__lable" for="orange">
+
+            </label>
+          </div>
+        </div>
+        <div class="order__form-item  order__form-item--name">
+          <div class="order__item-title">
+
+          </div>
+          <div class="order__inputs  order__inputs--name">
+            <label class="order__lable" for="user-name">
+
+            </label>
+
+            <label class="order__lable" for="user-surname">
+
+            </label>
+
+            <label class="order__lable" for="user-patronymic">
+
+            </label>
+
+          </div>
+        </div>
+        <div class="order__form-contacts">
+          <div class="order__form-item  order__form-item--phone">
+            <div class="order__item-title">
+
+            </div>
+            <div class="order__inputs  order__inputs--phone">
+
+            </div>
+          </div>
+          <div class="order__form-item  order__form-item--email">
+            <div class="order__item-title">
+
+            </div>
+            <div class="order__inputs  order__inputs--email">
+
+            </div>
+          </div>
+        </div>
+        <div class="order__form-item  order__form-item--additional">
+          <div class="order__item-title">
+
+          </div>
+          <div class="order__inputs  order__inputs--additional">
+
+          </div>
+        </div>
+        <div class="wrapper">
+          <p class="order__info">
+
+          </p>
+          <div class="order-submit">
+
+            <p class="order-submit__info">
+
+            </p>
+          </div>
+        </div>
+      </form>
     </section>
   </main>
   <footer class="main-footer">
     <div class="wrapper">
+      <div class="main-footer__mishka-logo"></div>
       <section class="social">
-        <a class="social-btn  social-btn--inst" href="#">Инстаграм</a>
-        <a class="social-btn  social-btn--fb" href="#">Фейсбук</a>
-        <a class="social-btn  social-btn--tw" href="#">Твиттер</a>
+        <a class="social-btn  social-btn--inst" href="#"></a>
+        <a class="social-btn  social-btn--fb" href="#"></a>
+        <a class="social-btn  social-btn--tw" href="#"></a>
       </section>
-      <hr>
       <section class="main-footer__copyright">
-        <span class="main-footer__designed">Разработано</span>
-        <span class="main-footer__logo"></span>
+        <span class="main-footer__designed">
+
+        </span>
+        <span class="main-footer__academy-logo"></span>
       </section>
     </div>
   </footer>

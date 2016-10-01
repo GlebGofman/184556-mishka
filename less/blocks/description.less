@@ -1,9 +1,40 @@
 .description {
-  background: @bg-color url("../../img/hero-mobile@1x.jpg") no-repeat;
-  height: 283px;
-  padding-top: 74px;
-  .outline(big-block; darkred);
+  width: @mobile-w;
+  margin: 0 auto;
+  padding-top: 73px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 27px;
   font-weight: bold;
+  .outline(big-block; red);
+}
+
+.description__tagline {
+  min-height: 90px;
+  line-height: 30px;
+  margin-bottom: 119px;
+  .outline(small-block; darkred);
+}
+
+@media @tablet-widths {
+  .description {
+    width: @tablet-w;
+    padding-top: 17px;
+  }
+
+  .description__tagline {
+    min-height: 100px;
+    margin-top: 116px;
+    margin-bottom: 370px;
+  }
+}
+
+@media @desktop-widths {
+  .description {
+    width: @desktop-w;
+  }
+
+  .description__tagline {
+    min-height: 120px;
+    margin-bottom: 350px;
+  }
 }

@@ -1,10 +1,14 @@
 .category-link {
-  background-color: @bg-color;
+  width: 290px;
+  min-height: 76px;
+  padding-left: 30px;
   padding-top: 27px;
-  padding-bottom: 32px;
+  background-color: @bg-color;
   font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 24px;
+  font-size: 19px;
+  line-height: 24px;
   font-weight: bold;
+  .outline(big-block; darkred);
 }
 
 .category-link--interior {
@@ -21,4 +25,33 @@
 
 .category-link__text {
   color: #fff;
+  width: 170px;
+  min-height: 48px;
+}
+
+@media @tablet-widths {
+  .category-link {
+    padding-top: 30px;
+    padding-left: 36px;
+    width: 298px;
+    min-height: 87px;
+  }
+
+  .category-link__text {
+    min-height: 60px;
+  }
+
+  .category-link--interior {
+    float: left;
+  }
+
+  .category-link--toys {
+    float: right;
+  }
+}
+
+@media @desktop-widths {
+  .category-link {
+    width: 489px;
+  }
 }

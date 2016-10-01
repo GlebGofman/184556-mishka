@@ -1,11 +1,42 @@
 .main-nav {
   background-color: @bg-color;
   font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 24px;
+  font-size: 17px;
   font-weight: bold;
+  min-height: 316px;
+  .outline(small-block; darkred);
+
+  &--closed {
+    display: none;
+  }
+}
+
+
+
+.main-nav__list {
+  list-style: none;
 }
 
 .main-nav__item a {
   color: #000;
   text-decoration: none;
 }
+
+@media @tablet-widths {
+
+  .main-nav {
+    float: right;
+    width: 396px;
+    min-height: 89px;
+    .clearfix();
+  }
+}
+
+@media @desktop-widths {
+
+  .main-nav {
+    width: 400px;
+  }
+}
+
+

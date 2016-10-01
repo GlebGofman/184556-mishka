@@ -1,4 +1,20 @@
 .product-categories {
   background-color: @bg-color;
-  .outline(big-block; darkred);
+  min-height: 206px;
+  .outline(small-block; darkred);
+}
+
+@media @tablet-widths {
+
+  .product-categories {
+    width: 668px;
+    margin: 0 auto;
+    min-height: 117px;
+  }
+}
+
+@media @desktop-widths {
+  .product-categories {
+    width: 1050px;
+  }
 }

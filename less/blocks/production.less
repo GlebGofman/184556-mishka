@@ -1,10 +1,12 @@
 .production {
+  display: flex;
+  min-height: 468px;
   background-color: @bg-color;
-  .outline(big-block; darkred);
   margin-top: 30px;
-  padding-top: 25px;
-  padding-bottom: 32px;
+  margin-bottom: 60px;
+  padding-bottom: 33px;
   font-family: "Open Sans", "Arial", sans-serif;
+  .outline(big-block; red);
 }
 
 .production__title {
@@ -17,4 +19,22 @@
   font-size: 13px;
   font-weight: normal;
   color: #444;
+}
+
+@media @tablet-widths {
+  .production {
+    margin-top: 53px;
+    margin-bottom: 63px;
+    min-height: 697px;
+    padding-bottom: 46px;
+  }
+}
+
+@media @desktop-widths {
+  .production {
+    margin-top: 57px;
+    margin-bottom: 106px;
+    min-height: 453px;
+    padding-bottom: 0;
+  }
 }
